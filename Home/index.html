@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="../CommoFiles/navFooterContact.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="backdrop"></div>
+  <!-- Nav Bar -->
+  <div class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><img style="fill: red;" src="../Icons/menu.png" alt="Menu"></label>
+      <div class="content">
+        <div class="logo"><a href="index.html">Right Choice</a></div>
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <!-- <li><a href="#">About</a></li> -->
+          <li><a href="../Stores/store.html">Stores</a></li>
+          <!-- <li><a href="#">Blogs</a></li> -->
+          <li><a href="#" id="navContactUs">Contact Us</a></li>
+          <li><a href="#login" id="navContactUs">Login</a></li>
+        </ul>
+      </div>
+      <label for="show-search" class="search-icon"><img src="../Icons/search.png" alt=""></label>
+      <form action="#" class="search-box">
+        <input type="text" placeholder="Type Something to Search..." required>
+        <button type="submit" class="go-icon">-></button>
+      </form>
+    </nav>
+  </div>
+
+  <!-- Slide Bar Images -->
+  <div class="slideContainer">
+    <div class="slideContainer_content">
+      <div class="images">
+        <img class="content__images__image" src="../images/Audi.jpg">
+        <img class="content__images__image" src="../images/Lamborgini.jpg">
+        <img class="content__images__image" src="../images/kia.jpg">
+        <img class="content__images__image" src="../images/honda city.jpg">
+        <img class="content__images__image" src="../images/ucar.jpg">
+      </div>
+      <div class="btm-slides">
+        <span onclick="btm_slide(1)"></span>
+        <span onclick="btm_slide(2)"></span>
+        <span onclick="btm_slide(3)"></span>
+        <span onclick="btm_slide(4)"></span>
+        <span onclick="btm_slide(5)"></span>
+      </div>
+      <div class="sliders left" onclick="side_slide(-1)">
+        <span><</span>
+            <!-- <span class="fas fa-angle-left"></span> -->
+      </div>
+      <div class="sliders right" onclick="side_slide(1)">
+        <span>></span>
+        <!-- <span class="fas fa-angle-right"></span> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Logo Container -->
+  <div class="brandLogoContainer">
+    <h3>Car Brands</h3>
+    <div class="image-grid">
+      <a href="../carsPage/General/carsGrid.php?brand=MARUTI"><img src="../CAR_PNG/marutiLogo.png" alt="MARUTI"></a>
+      <a href="../carsPage/General/carsGrid.php?brand=HYUNDAI"><img src="../CAR_PNG/Hyundai.png" alt="HYUNDAI"></a>
+      <a href="../carsPage/General/carsGrid.php?brand=TATA"><img src="../CAR_PNG/tata.png" alt="TATA"></a>
+      <a href="../carsPage/General/carsGrid.php?brand=MAHINDRA"><img src="../CAR_PNG/Mahindra_Log0.jpg" alt="MAHINDRA"></a>
+      <a href="../carsPage/General/carsGrid.php?brand=KIA"><img src="../CAR_PNG/Kia.png" alt="KIA"></a>
+      <a href="../carsPage/General/carsGrid.php?brand=MERCEDES-BENZ"><img src="../CAR_PNG/mercedes.png" alt="MERCEDES-BENZ"></a>
+      <a href="../carsPage/General/carsGrid.php?brand=RENAULT"><img src="../CAR_PNG/Renault.png" alt="RENAULT"></a>
+      <a href="../carsPage/General/carsGrid.php?brand=HONDA"><img src="../CAR_PNG/honda.png" alt="HONDA"></a>
+      <a href="../carsPage/General/carsGrid.php?brand=MG"><img src="../CAR_PNG/MG_LOGO.png" alt="MG"></a>
+      <a href="../carsPage/General/carsGrid.php?brand=NISSAN"><img src="../CAR_PNG/nissan.png" alt="NISSAN"></a>
+      <a href="../carsPage/General/carsGrid.php?brand=DATSUN"><img src="../CAR_PNG/datsun.png" alt="DATSUN"></a>
+      <a href="../carsPage/General/carsGrid.php?brand=TOYOTA"><img src="../CAR_PNG/Toyato.png" alt="TOYOTA"></a>
+      <a href="../carsPage/General/carsGrid.php?brand=SKODA"><img src="../CAR_PNG/Skoda.png" alt="SKODA"></a>
+      <a href="../carsPage/General/carsGrid.php?brand=VOLKSWAGEN"><img src="../CAR_PNG/volkswagon.png" alt="VOLKSWAGEN"></a>
+      <a href="../carsPage/General/carsGrid.php?brand=JEEP"><img src="../CAR_PNG/jeep1.jpg" alt="JEEP"></a>
+      <a href="../carsPage/General/carsGrid.php?brand=AUDI"><img src="../carpng/Audi.jpg" alt="AUDI"></a>
+      
+    </div>
+    <div class="image-grid image-grid2">
+      <a href="../carsPage/General/carsGrid.php?brand=BMW"><img src="../CAR_PNG/BMW.png" alt="BMW"></a>
+      <a href="../carsPage/General/carsGrid.php?brand=JAGUAR"><img src="../CAR_PNG/Jaguar.png" alt="JAGUAR"></a>
+      <a href="../carsPage/General/carsGrid.php?brand=VOLVO"><img src="../CAR_PNG/Volvo.png" alt="VOLVO"></a>
+      <a href="../carsPage/General/carsGrid.php?brand=LEXUS"><img src="../CAR_PNG/lexus.png" alt="LEXUS"></a>
+      <a href="../carsPage/General/carsGrid.php?brand=LAND ROVER"><img src="../CAR_PNG/landRover.png" alt="LAND ROVER"></a>
+      <a href="../carsPage/General/carsGrid.php?brand=PORCHE"><img src="../CAR_PNG/Porche.png" alt="PORCHE"></a>
+      <a href="../carsPage/General/carsGrid.php?brand=FERRARI"><img src="../CAR_PNG/ferrari.png" alt="FERRARI"></a>
+      <a href="../carsPage/General/carsGrid.php?brand=ROLLS-ROYCE"><img src="../CAR_PNG/roolsroyce.png" alt="ROLLS-ROYCE"></a>
+      <a href="../carsPage/General/carsGrid.php?brand=BENTLY"><img src="../CAR_PNG/bentley.png" alt="BENTLY"></a>
+      <a href="../carsPage/General/carsGrid.php?brand=BUGATTI"><img src="../CAR_PNG/Jaguar.png" alt="BUGATTI"></a>
+    </div>
+    <p id="brandLogoContainer__viewMore">view more</p>
+  </div>
+
+  <!-- Top car section -->
+  <div class="topCarContainer">
+    <div class="topCarContainer__items">
+      <a href="#" class="topCarContainer__items__link">
+        <img class="topCarContainer__items__link__img" src="../images/kia.jpg" alt="architecture">
+        <label class="topCarContainer__items__link__label">Top SUV</label>
+      </a>
+      <a href="#" class="topCarContainer__items__link">
+        <img class="topCarContainer__items__link__img" src="../images/swift.jpg" alt="architecture">
+        <label class="topCarContainer__items__link__label">Top Hatchback Cars</label>
+      </a>
+      <a href="#" class="topCarContainer__items__link">
+        <img class="topCarContainer__items__link__img" src="../images/honda city.jpg" alt="architecture">
+        <label class="topCarContainer__items__link__label">Top Sedan Cars</label>
+      </a>
+      <a href="#" class="topCarContainer__items__link">
+        <img class="topCarContainer__items__link__img" src="../images/luxury.jpg" alt="architecture">
+        <label class="topCarContainer__items__link__label">Top Luxury Cars</label>
+      </a>
+    </div>
+  </div>
+
+  <!--Login Form -->
+  <div class="adminLoginDisplay" id="login">
+    <div class="contactUsContainer">
+      <div class="contactUsContainer__item">
+        <div class="contactUsContainer__item__image">
+          <img src="../images/mcqueencar1.jpg" alt="Car">
+        </div>
+        <form class="contactUsContainer__item__form" action="login.php"  method="POST">
+          <h2>Login</h2>
+          <fieldset>
+            <legend>Username</legend>
+            <input type="text" placeholder="Smith Joe" name="userName" required>
+          </fieldset>
+          <fieldset>
+            <legend>Password</legend>
+            <input type="password" placeholder="********" name="password" required>
+          </fieldset>
+          <div class="contactUsContainer__item__form__submit">
+            <button type="submit" name="submit">Submit</button>
+          </div>
+          <p><a href="../signup/registration.html">sign up or create an account?</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Footer -->
+  <footer class="footerContainer">
+    <div class="footerContainer__websiteInfo">
+      <h1 class="footerContainer__websiteInfo__websiteName">Right Choice</h1>
+      <p class="footerContainer__websiteInfo__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+        molestias, iusto dolorem ea laudantium assumenda in quo iure incidunt eum!. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Blanditiis, et! Esse nesciunt, at explicabo accusamus harum quisquam! Perferendis,
+        natus accusamus!</p>
+    </div>
+    <div class="footerContainer__socialMediaIcons">
+      <div><a href="#"><img src="../Icons/twitter.png" alt=""></a></div>
+      <div><a href="#"><img src="../Icons/linkedIn.png" alt=""></a></div>
+      <div><a href="#"><img src="../Icons/facebook.png" alt=""></a></div>
+      <div><a href="#"><img src="../Icons/instagram.jpeg" alt=""></a></div>
+      <!-- <div><a href="#"><img src="../Icons/facebook.png" alt="Facebook"></a></div>
+      <div><a href="#"><img src="../Icons/instagram.jpeg" alt="Instagram"></a></div>
+      <div><a href="#"><img src="../Icons/linkedIn.png" alt="Img"></a></div> -->
+    </div>
+    <div class="footerContainer__items">
+      <a href="index.html">Home</a>
+      <a href="#">About</a>
+      <a href="#">Stores</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="designerName">
+      <h3>Designed by : Kunal Mathur</h3>
+    </div>
+  </footer>
+
+  <!-- Contact Form -->
+  <div class="contactUsDisplay">
+    <div class="contactUsContainer">
+      <form class="contactUsContainer__item" action="contactForm.php" method="post">
+        <div id="closeForm">X</div>
+        <div class="contactUsContainer__item__image">
+          <img src="../images/mcqueencar1.jpg" alt="Car">
+        </div>
+        <div class="contactUsContainer__item__form">
+          <h2>Contact Us</h2>
+          <fieldset>
+            <legend>Name</legend>
+            <input type="text" placeholder="Enter your name" name="name" required>
+          </fieldset>
+          <fieldset>
+            <legend>E-mail</legend>
+            <input type="email" placeholder="Enter your email" name="email"  required>
+          </fieldset>
+          <fieldset>
+            <legend>Message</legend>
+            <textarea id="contactUsContainer__item__form__msg" cols="30" rows="5" name="message" required></textarea>
+          </fieldset>
+          <div class="contactUsContainer__item__form__submit">
+            <button>Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="../CommoFiles/script.js"></script>
+
+
+</body>
+</html>

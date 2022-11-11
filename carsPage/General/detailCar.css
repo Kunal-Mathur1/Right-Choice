@@ -1,0 +1,137 @@
+/* ---------------------Slideing Image CSS---------------------------------------------------------- */
+
+.main {
+  width: 90%;
+  margin: auto;
+  display: flex;
+}
+
+.leftSection {
+  width: 50%;
+  margin: 13px;
+  /* border: 1px solid black; */
+}
+
+.rightSection {
+  width: 50%;
+  /* border: 1px solid black; */
+}
+
+.slideContainer {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  text-align: center;
+  width: 100%;
+  min-height: 25vw;
+  margin: auto;
+  /* margin-top: 8vh;
+    margin-bottom: 2vh; */
+}
+.content {
+  height: 25vw;
+  width: 100%;
+  position: relative;
+}
+.content .images {
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+.content .images img {
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  /* transition: 1s ease-in; */
+}
+
+.sliders {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 35px;
+  cursor: pointer;
+  border: 2px solid white;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 80px;
+  /* padding: 10px; */
+  margin: 0 15px;
+}
+.sliders:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.right {
+  right: 0;
+}
+.sliders span {
+  line-height: 41px;
+  font-size: 25px;
+  color: white;
+}
+
+
+.namePriceInfo{
+  margin: 14px 4px;
+}
+.namePriceInfo div p{
+  color: rgb(117, 105, 105);
+}
+.storeBtn button{
+  padding: 8px;
+  background: rgb(89, 70, 207);
+  border: none;
+  color: white;
+  font-size: 16px;
+}
+
+
+
+/* Right Section */
+
+.rightSection div h2{
+  font-weight: 600;
+  font-size: 26px;
+  margin: 5px;
+}
+
+.keySpecs, .keySpecification{
+  border: 1px solid rgb(190, 165, 165);
+  border-radius: 4px;
+  margin: 14px 4px;
+  padding: 4px;
+}
+
+.keySpecs__items{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2px;
+  text-align: center;
+}
+
+.keySpecs__items div{
+  margin: 8px 0;
+  height: 100%;
+  width: 100%;
+}
+
+.keySpecs__items div img{
+  width: 100px;
+  /* height: ; */
+}
+
+
+
+.keySpecification_item{
+  display: flex;
+  justify-content: center;
+  margin: 12px 0;
+}
+
+.keySpecification_item td{
+  width: 15vw;
+  font-size: 20px;
+  padding: 8px;
+  margin: 0 5px ;
+  border-bottom: 1px solid silver;
+}

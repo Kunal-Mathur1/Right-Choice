@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin </title>
+    <link rel="stylesheet" href="../CommoFiles/navFooterContact.css">
+    <link rel="stylesheet" href="admin1.css">
+</head>
+
+<body>
+    <div class="backdrop"></div>
+    <!-- Nav Bar -->
+    <div class="wrapper">
+        <nav>
+            <input type="checkbox" id="show-search">
+            <input type="checkbox" id="show-menu">
+            <label for="show-menu" class="menu-icon"><img src="../Icons/menu.png" alt="Menu"></label>
+            <div class="content">
+                <div class="logo"><a href="index.html">Right Choice</a></div>
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="../Stores/store.html">Stores</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#" id="navContactUs">Contact Us</a></li>
+                </ul>
+            </div>
+            <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+            <label for="show-search" class="search-icon"><img src="../Icons/search.png" alt="img"></label>
+            <form action="#" class="search-box">
+                <input type="text" placeholder="Type Something to Search..." required>
+                <!-- <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button> -->
+                <button type="submit" class="go-icon">-></button>
+            </form>
+        </nav>
+    </div>
+
+    <div class="addCarSection">
+        <div class="container">
+            <div class="title">Add Car</div>
+            <div class="content">
+                <form action="insert.php" method="post">
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="details">Brand Name</span>
+                            <!-- <input type="text" placeholder="Enter your name" name="name" required> -->
+                            <select name="brandName">
+                                <option>--Select Brand Name</option>
+                                <option>MARUTI</option>
+                                <option>HYUNDAI</option>
+                                <option>TATA</option>
+                                <option>MAHINDRA</option>
+                                <option>KIA</option>
+                                <option>MERCEDES-BENZ</option>
+                                <option>RENAULT</option>
+                                <option>HONDA</option>
+                                <option>MG</option>
+                                <option>NISSAN</option>
+                                <option>DATSUN</option>
+                                <option>TOYOTA</option>
+                                <option>SKODA</option>
+                                <option>VOLKSWAGEN</option>
+                                <option>JEEP</option>
+                                <option>AUDI</option>
+                                <option>BMW</option>
+                                <option>JAGUAR</option>
+                                <option>VOLVO</option>
+                                <option>LEXUS</option>
+                                <option>LAND ROVER</option>
+                                <option>PORCHE</option>
+                                <option>FERRARI</option>
+                                <option>ROLLS-ROYCE</option>
+                                <option>BENTLY</option>
+                                <option>BUGATTI</option>
+                                <option>ASTON MARTIN</option>
+                                <option>MASERTI</option>
+                                <option>LAMBORGHINI</option>
+                                <option>MINI</option>
+                            </select>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Modal Name</span>
+                            <input type="text" id="modalName" name="modalName" placeholder="abc" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Image Link/Address</span>
+                            <input type="text" id="imgLink" name="imgLinkAddress"
+                                placeholder="../../images/mcqueencar1.jpg" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Car Starting price</span>
+                            <input type="text" name="startingPrice" id="carPrice" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Car Ending price</span>
+                            <input type="text" name="endingPrice" id="carPrice" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Starting Mileage</span>
+                            <input type="text" name="startingMileage" id="mileage" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Ending Mileage</span>
+                            <input type="text" name="endingMileage" id="mileage" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Transmission</span>
+                            <select name="transmission">
+                                <option>--Select Transmission</option>
+                                <option>Manual</option>
+                                <option>Automatic</option>
+                                <option>Manual/Automatic</option>
+                            </select>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">No. of Seats</span>
+                            <input type="text" id="mileage" name="seats" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Engine Displacement</span>
+                            <input type="text" id="mileage" name="engineDisplacement" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Bhp</span>
+                            <input type="text" id="mileage" name="bhp" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">ARAi Mileage</span>
+                            <input type="text" id="mileage" name="ARAI_mileage" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Boot Space</span>
+                            <input type="text" id="mileage" name="bootSpace" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Fuel Type</span>
+                            <select name="fuelType">>
+                                <option>--Select Transmission</option>
+                                <option>Petrol</option>
+                                <option>Diesel</option>
+                                <option>Petrol/Diesel</option>
+                                <option>Electric</option>
+                            </select>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">No. of cylinders</span>
+                            <input type="text" id="mileage" name="noOfCylinder" required> 
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Body Type</span>
+                            <select name="bodyType">
+                                <option>--Select Body Type</option>
+                                <option>Hatchback</option>
+                                <option>SUV</option>
+                                <option>MU</option>
+                                <option>Electric</option>
+                            </select>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Fuel Tank Capacity</span>
+                            <input type="text" id="mileage" name="fuelTankCapacity" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Max Power</span>
+                            <input type="text" id="mileage" name="maxPower">
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Max Torque</span>
+                            <input type="text" id="mileage" name="maxTorque" required>
+                        </div>
+                    </div>
+
+                    <div class="button">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

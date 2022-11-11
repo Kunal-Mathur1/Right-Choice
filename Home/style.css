@@ -1,0 +1,335 @@
+/* ---------------------Slideing Image CSS---------------------------------------------------------- */
+
+.slideContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  min-height: 35vw;
+  margin-top: 8vh;
+  margin-bottom: 2vh;
+}
+.slideContainer_content {
+  height: 38vw;
+  width: 80%;
+  position: relative;
+}
+.slideContainer_content .images {
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 12px;
+}
+.slideContainer_content .images img {
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  /* transition: 1s ease-in; */
+}
+.btm-slides {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.btm-slides span {
+  height: 15px;
+  /* width: 50px; */
+  width: 15px;
+  border: 2px solid white;
+  margin: 0 3px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.sliders {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45px;
+  cursor: pointer;
+  border: 2px solid white;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  /* padding: 10px; */
+  margin: 0 15px;
+}
+.sliders:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.right {
+  right: 0;
+}
+.sliders span {
+  line-height: 41px;
+  font-size: 35px;
+  color: white;
+}
+
+/* ------------Brand Logo CSS----------------------------------------------------------------------------------- */
+
+.brandLogoContainer h3 {
+  text-align: center;
+  font-size: 32px;
+  /* padding-left: 80px; */
+  background: #14181f;
+  color: white;
+  padding: 12px;
+  font-weight: bold;
+}
+
+.brandLogoContainer {
+  width: 80%;
+  margin: auto;
+  /* background-color: skyblue; */
+  border: 1px solid #80808029;
+  /* border-radius: 45px; */
+  background: white;
+}
+.image-grid {
+  --rowGap: 20px;
+  --columnGap: 20px;
+  --num-cols: 8;
+  --row-height: 90px;
+  box-sizing: border-box;
+  padding: var(--gap);
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  grid-auto-rows: var(--row-height);
+  row-gap: var(--rowGap);
+  column-gap: var(--columnGap);
+  padding: 40px 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.image-grid2 {
+  display: none;
+  padding-top: 0;
+}
+
+.image-grid a {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.image-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border: 1px solid #80808029;
+  padding: 15px 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px #171c2440;
+  margin: auto;
+}
+
+#brandLogoContainer__viewMore {
+  width: fit-content;
+  margin: auto;
+  cursor: pointer;
+  font-weight: normal;
+  color: rgb(41, 41, 255);
+  font-size: 20px;
+  padding-bottom: 18px;
+}
+
+.filter{
+  margin: auto;
+  width: 83%;
+}
+/* ----------------Top Car Container------------------- */
+
+.topCarContainer {
+  width: 80%;
+  margin: 12px auto;
+  padding: 4vh;
+  /* background: white; */
+  border: 1px solid rgb(235, 201, 201);
+}
+.topCarContainer__items {
+  --rowGap: 20px;
+  --columnGap: 35px;
+  --num-cols: 2;
+  --row-height: 18vw;
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  grid-auto-rows: var(--row-height);
+  column-gap: var(--columnGap);
+  row-gap: var(--rowGap);
+}
+
+.topCarContainer__items__link {
+  display: flex;
+  position: relative;
+  box-shadow: 5px 5px 10px #171c2440;
+}
+
+.topCarContainer__items__link__img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #80808029;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.topCarContainer__items__link__label {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 22px;  
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2px 0;
+  cursor: pointer;
+}
+
+/* Login */
+.adminLoginDisplay{
+  width: 80%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.contactUsContainer__item{
+  height: 400px;
+}
+.contactUsContainer__item__form {
+  border: 1px solid gray;
+}
+.contactUsContainer__item__form p{
+  color: blue;
+}
+@media screen and (max-width: 1250px) {
+  /* Slideing Image CSS */
+  .slideContainer {
+    min-height: 38vw;
+  }
+  .content {
+    height: 45vw;
+    width: 90%;
+  }
+
+  /* Brand Logo CSS */
+  .brandLogoContainer {
+    width: 90%;
+    margin: auto;
+    border-radius: 45px;
+  }
+  .image-grid {
+    --num-cols: 8;
+    --row-height: 70px;
+    row-gap: 10px;
+    margin: 10px;
+  }
+
+  /* Top Car Container */
+  .topCarContainer {
+    width: 95%;
+  }
+  .topCarContainer__items {
+    --row-height: 18vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  /* Slideing Image CSS */
+  .slideContainer {
+    min-height: 38vw;
+  }
+  .content {
+    height: 45vw;
+    width: 90%;
+  }
+
+  /* Brand Logo CSS */
+  .brandLogoContainer {
+    width: 90%;
+    margin: auto;
+    border-radius: 45px;
+  }
+  .image-grid {
+    --num-cols: 6;
+    --row-height: 50px;
+    padding: 0;
+    column-gap: 12px;
+  }
+
+  /* Top Car Container */
+  .topCarContainer {
+    width: 95%;
+  }
+  .topCarContainer__items {
+    --row-height: 32vw;
+    --num-cols: 2;
+    --rowGap: 20px;
+  }
+  .topCarContainer__items__link {
+    box-shadow: 2px 2px 5px #171c2440;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* Slideing Image CSS */
+  .slideContainer {
+    min-height: 48vw;
+  }
+  .content {
+    height: 48vw;
+    width: 95%;
+  }
+  .sliders {
+    width: 35px;
+    margin: 0 15px;
+  }
+  .sliders span {
+    font-size: 18px;
+    line-height: 30px;
+    color: white;
+    font-weight: bold;
+  }
+
+  /* Brand Logo CSS */
+  .brandLogoContainer {
+    width: 95%;
+    margin: auto;
+    border-radius: 45px;
+  }
+  .brandLogoContainer h3 {
+    font-size: 18px;
+  }
+  .image-grid {
+    --num-cols: 4;
+    --row-height: 60px;
+    --rowGap: 10px;
+    --columnGap: 10px;
+    padding: 1vh 10px;
+  }
+  .image-grid img {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 2px #171c2440;
+  }
+
+  /* Top Car Container */
+  .topCarContainer {
+    width: 93%;
+    padding: 2.5vh 0;
+  }
+  .topCarContainer__items {
+    --row-height: 23vh;
+    --num-cols: 2;
+    --rowGap: 20px;
+    --columnGap: 15px;
+  }
+  .topCarContainer__items__link {
+    box-shadow: 2px 2px 5px #171c2440;
+  }
+  .topCarContainer__items__link__label {
+    font-size: 14px;
+  }
+
+}

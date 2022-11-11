@@ -1,0 +1,82 @@
+body{
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.adminPage__item{
+    display: flex;
+    justify-content:space-around;
+}
+
+
+.adminPage__item__addCar form{
+    display: flex;
+    justify-content: space-around;
+}
+
+.adminPage__item__addCar fieldset select{
+    width: 100%;
+    width: 100%;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    background: white;
+    padding: 5px 0 6px 10px;
+}
+
+/* Add Car */
+.adminPage__item__addCar, .adminPage__item__addAdmin{
+    width: 600px;
+    border: 1px solid black;
+    background-color: white;
+    padding: 10px;
+}
+
+.adminPage__item__addCar h2, .adminPage__item__addAdmin h2{
+    text-align: center;
+}
+
+.adminPage__item__addCar fieldset, .adminPage__item__addAdmin fieldset{
+    margin: 12px 0;
+    border-color: gray;
+}
+
+.adminPage__item__addCar fieldset legend, .adminPage__item__addAdmin fieldset legend{
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.adminPage__item__addCar fieldset input, .adminPage__item__addAdmin fieldset input{
+    width: 100%;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 5px 0 6px 10px;
+}
+
+.addCarSubmit button, .addAdminSubmit button{
+    width: 100%;
+    padding: 8px 5px;
+    background: rgb(38, 48, 138);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 7px 0;
+    font-size: 18px;
+}
+
+.adminPage__item__addAdmin{
+    height: 300px;
+}
+
+@media screen and (max-width: 600px){
+    body{
+        background: salmon;
+    }
+    .adminPage__item{
+        width: 290px;
+        margin: auto;
+        flex-direction: column;
+    }
+    .adminPage__item__addCar, .adminPage__item__addAdmin{
+        margin: 10px 0;
+    }
+}

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin </title>
+    <link rel="stylesheet" href="../CommoFiles/navFooterContact.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+    <div class="backdrop"></div>
+    <!-- Nav Bar -->
+    <div class="wrapper">
+        <nav>
+            <input type="checkbox" id="show-search">
+            <input type="checkbox" id="show-menu">
+            <label for="show-menu" class="menu-icon"><img src="../Icons/menu.png" alt="Menu"></label>
+            <div class="content">
+                <div class="logo"><a href="index.html">Right Choice</a></div>
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="../Stores/store.html">Stores</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#" id="navContactUs">Contact Us</a></li>
+                </ul>
+            </div>
+            <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+            <label for="show-search" class="search-icon"><img src="../Icons/search.png" alt="img"></label>
+            <form action="#" class="search-box">
+                <input type="text" placeholder="Type Something to Search..." required>
+                <!-- <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button> -->
+                <button type="submit" class="go-icon">-></button>
+            </form>
+        </nav>
+    </div>
+
+    <!-- Admin Page -->
+    <div class="adminPage">
+        <div class="adminPage__item">
+            <div class="adminPage__item__addCar">
+                <h2>Add Car</h2>
+                <form action="insert.php" method="POST">
+                    <div>
+                        <fieldset>
+                            <legend>Brand Name</legend>
+                            <select name="brandName">
+                                <option>--Select Brand Name</option>
+                                <option>MARUTI</option>
+                                <option>HYUNDAI</option>
+                                <option>TATA</option>
+                                <option>MAHINDRA</option>
+                                <option>KIA</option>
+                                <option>MERCEDES-BENZ</option>
+                                <option>RENAULT</option>
+                                <option>HONDA</option>
+                                <option>MG</option>
+                                <option>NISSAN</option>
+                                <option>DATSUN</option>
+                                <option>TOYOTA</option>
+                                <option>SKODA</option>
+                                <option>VOLKSWAGEN</option>
+                                <option>JEEP</option>
+                                <option>AUDI</option>
+                                <option>BMW</option>
+                                <option>JAGUAR</option>
+                                <option>VOLVO</option>
+                                <option>LEXUS</option>
+                                <option>LAND ROVER</option>
+                                <option>PORCHE</option>
+                                <option>FERRARI</option>
+                                <option>ROLLS-ROYCE</option>
+                                <option>BENTLY</option>
+                                <option>BUGATTI</option>
+                                <option>ASTON MARTIN</option>
+                                <option>MASERTI</option>
+                                <option>LAMBORGHINI</option>
+                                <option>MINI</option>
+                            </select>
+                        </fieldset>
+                        <!-- <fieldset>
+                            <legend>Brand Name</legend>
+                            <input type="text" id="brandName" name="brandName" placeholder="xyz" required>
+                        </fieldset> -->
+                        <fieldset>
+                            <legend>Modal Name</legend>
+                            <input type="text" id="modalName" name="modalName" placeholder="abc" required>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Image Link/Address</legend>
+                            <input type="text" id="imgLink" name="imgLinkAddress"
+                                placeholder="../../images/mcqueencar1.jpg" required>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Car Starting price</legend>
+                            <input type="text" name="startingPrice" id="carPrice" required>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Car Ending price</legend>
+                            <input type="text" name="endingPrice" id="carPrice" required>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Starting Mileage</legend>
+                            <input type="text" name="startingMileage" id="mileage" required>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Ending Mileage</legend>
+                            <input type="text" name="endingMileage" id="mileage" required>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Transmission</legend>
+                            <select name="transmission">
+                                <option>--Select Transmission</option>
+                                <option>Manual</option>
+                                <option>Automatic</option>
+                                <option>Manual/Automatic</option>
+                            </select>
+                            <!-- <input type="text" id="mileage" name="transmission" placeholder="Manual/Automatic" required> -->
+                        </fieldset>
+                        <fieldset>
+                            <legend>No. of Seats</legend>
+                            <input type="text" id="mileage" name="seats" required>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Engine Displacement</legend>
+                            <input type="text" id="mileage" name="engineDisplacement" required>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend>Bhp</legend>
+                            <input type="text" id="mileage" name="bhp">
+                        </fieldset>
+                        <fieldset>
+                            <legend>ARAi Mileage</legend>
+                            <input type="text" id="mileage" name="ARAI_mileage">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Boot Space</legend>
+                            <input type="text" id="mileage" name="bootSpace">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Fuel Type</legend>
+                            <select name="fuelType">>
+                                <option>--Select Transmission</option>
+                                <option>Petrol</option>
+                                <option>Diesel</option>
+                                <option>Petrol/Diesel</option>
+                                <option>Electric</option>
+                            </select>
+                            <!-- <input type="text" id="mileage" name="fuelType"> -->
+                        </fieldset>
+                        <fieldset>
+                            <legend>No. of cylinders</legend>
+                            <input type="text" id="mileage" name="noOfCylinder">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Body Type</legend>
+                            <select name="bodyType">
+                                <option>--Select Body Type</option>
+                                <option>Hatchback</option>
+                                <option>SUV</option>
+                                <option>MU</option>
+                                <option>Electric</option>
+                            </select>
+                            <!-- <input type="text" id="mileage" name="bodyType"> -->
+                        </fieldset>
+                        <fieldset>
+                            <legend>Fuel Tank Capacity</legend>
+                            <input type="text" id="mileage" name="fuelTankCapacity">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Max Power</legend>
+                            <input type="text" id="mileage" name="maxPower">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Max Torque</legend>
+                            <input type="text" id="mileage" name="maxTorque">
+                        </fieldset>
+                        <div class="addCarSubmit">
+                            <button onclick="addCar()">Submit</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+
+
+            <!-- <div class="adminPage__item__addAdmin">
+                <form action="insert.php" method="POST">
+                    <h2>Add Admin</h2>
+                    <fieldset>
+                        <legend>Name :</legend>
+                        <input type="text" name="newAdminName" id="brandName">
+                    </fieldset>
+                    <fieldset>
+                        <legend>User Name :</legend>
+                        <input type="text" name="newAdminUserName" id="brandName">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Password :</legend>
+                        <input type="password" name="newAdminPassword" id="brandName">
+                    </fieldset>
+                    <div class="addAdminSubmit">
+                        <button>Submit</button>
+                    </div>
+                </form>
+            </div> -->
+        </div>  
+    </div>
+    <!-- <script src="admin.js"></script> -->
+
+
+    <!-- Footer -->
+    <footer class="footerContainer">
+        <div class="footerContainer__websiteInfo">
+            <h1 class="footerContainer__websiteInfo__websiteName">Right Choice</h1>
+            <p class="footerContainer__websiteInfo__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+                molestias, iusto dolorem ea laudantium assumenda in quo iure incidunt eum!. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Blanditiis, et! Esse nesciunt, at explicabo accusamus harum quisquam!
+                Perferendis,
+                natus accusamus!</p>
+        </div>
+        <div class="footerContainer__socialMediaIcons">
+            <div><a href="#"><img src="../Icons/linkedIn.png" alt="LinkedIn"></a></div>
+            <div><a href="#"><img src="../Icons/facebook.png" alt="Facebook"></a></div>
+            <div><a href="#"><img src="../Icons/instagram.jpeg" alt="Instagram"></a></div>
+            <div><a href="#"><img src="../Icons/linkedIn.png" alt="Img"></a></div>
+        </div>
+        <div class="footerContainer__items">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Stores</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="designerName">
+            <h3>Designed by : Kunal Mathur</h3>
+        </div>
+    </footer>
+
+    <!-- Contact Form -->
+    <div class="contactUsDisplay">
+        <div class="contactUsContainer">
+            <div class="contactUsContainer__item">
+                <div id="closeForm">X</div>
+                <div class="contactUsContainer__item__image">
+                    <img src="../images/mcqueencar1.jpg" alt="Car">
+                </div>
+                <div class="contactUsContainer__item__form">
+                    <h2>Contact Us</h2>
+                    <fieldset>
+                        <legend>Name</legend>
+                        <input type="text" placeholder="Enter your name">
+                    </fieldset>
+                    <fieldset>
+                        <legend>E-mail</legend>
+                        <input type="email" placeholder="Enter your email">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Message</legend>
+                        <textarea id="contactUsContainer__item__form__msg" cols="30" rows="5"></textarea>
+                    </fieldset>
+                    <div class="contactUsContainer__item__form__submit">
+                        <button>Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../CommoFiles/script.js"></script>
+</body>
+
+</html>
